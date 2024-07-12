@@ -2,7 +2,9 @@
 
 :root {
   --image-width: 40vw;
+  --main-color: rgb(176, 84, 63);
   box-sizing: border-box;
+  --radius: 4px;
 }
 
 * {
@@ -30,7 +32,7 @@
 
 .signup-container h1 {
   font-size: 50px;
-  color: rgb(176, 84, 63);
+  color: var(--main-color);
   padding-bottom: 20px;
   position: relative;
   right: 35px;
@@ -54,6 +56,9 @@
 .form-input input {
   padding: 5px;
   min-width: 250px;
+  border: none;
+  border-radius: var(--radius);
+  border: 1px solid gray;
 }
 
 .end-forum {
@@ -63,7 +68,14 @@
 
 .end-forum button {
   padding: 10px;
-  background-color: rgb(176, 84, 63);
+  background-color: var(--main-color);
   color: white;
   font-size: 1.1rem;
+  border: none;
+  border-radius: var(--radius);
+}
+
+.sign-in {
+  color: var(--main-color);
+  font-weight: 600;
 }
