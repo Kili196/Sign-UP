@@ -2,6 +2,7 @@
 
 :root {
   --image-width: 40vw;
+  box-sizing: border-box;
 }
 
 * {
@@ -34,4 +35,23 @@
   position: relative;
   right: 35px;
   top: 0px;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-styling {
+  display: flex;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.form-input input {
+  padding: 5px;
+  min-width: 250px;
 }
