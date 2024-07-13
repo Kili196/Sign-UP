@@ -3,6 +3,7 @@
 :root {
   --image-width: 40vw;
   --main-color: rgb(176, 84, 63);
+  --secondary-color: rgb(206, 114, 93);
   box-sizing: border-box;
   --radius: 4px;
 }
@@ -86,7 +87,15 @@ body {
   border-radius: var(--radius);
 }
 
+.end-forum button:hover {
+  background-color: var(--secondary-color);
+}
+
 .sign-in {
   color: var(--main-color);
   font-weight: 600;
+}
+
+.sign-in:hover {
+  color: var(--secondary-color);
 }
