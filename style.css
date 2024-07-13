@@ -30,6 +30,25 @@ body {
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+.image {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: var(--image-width);
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex;
 }
@@ -43,7 +62,7 @@ body {
 }
 
 .signup-container h1 {
-  font-size: 50px;
+  font-size: 4rem;
   color: var(--main-color);
   padding-bottom: 20px;
   position: relative;
@@ -63,18 +82,30 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3px;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .form-input input {
-  padding: 5px;
-  min-width: 250px;
+  padding: 10px;
+  min-width: 300px;
   border: none;
   border-radius: var(--radius);
   border: 1px solid gray;
 }
 
+.form-input input::placeholder {
+  font-size: 1.1rem;
+}
+
 .form-input input:focus {
   outline: 1px solid gray;
+}
+
+.end-forum {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
 }
 
 .form-input .end-forum {
@@ -86,7 +117,7 @@ body {
   padding: 7px;
   background-color: var(--main-color);
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   border: none;
   margin-top: 3px;
   border-radius: var(--radius);
